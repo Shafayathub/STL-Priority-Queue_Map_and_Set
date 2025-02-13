@@ -22,7 +22,10 @@ class Cmp{
     {
         // its logic is opposite logic of custom compare func of sort function. Example is Ascending order.
         if(l.marks > r.marks) return true;
-        else return false;
+        else if(l.marks < r.marks) return false;
+        else{
+            return l.roll > r.roll;
+        }
     }
 };
 
